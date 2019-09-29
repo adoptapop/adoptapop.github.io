@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>adopt a pop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<h1>Bienvenue sur  
+				<br />Adopt a Pop</h1>
+                <p>crée et adopte ton propre Pop
+                <br />
+                <br /></p>
+                
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container medium">
+					<h2>Tu veux adopter un être aimant qui restera toujours avec toi ?
+					Alors n'hésite plus et viens créer ton propre pop</h2>
+
+				</header>
+
+				<div class="box alt container">
+
+					<section class="feature left">
+						<a class="image">
+							<img src="images/0.png" class="imagepop" id="imageBonnet1"/>
+							<img src="images/0.png" class="imagepop" id="imageBonnet2"/>
+							<img src="images/bon_corps.png" class="imagepop" id="imageCorps"/>
+						</a>
+						<div class="content">
+							<div class="row m3">
+								<div class="col-6">
+									<h3>Nom</h3>
+								</div>
+								<div class="col-6">
+									<div >
+										<input type="text" name="name" placeholder="Nom">
+									</div>
+								</div>
+							</div>
+
+							<div class="row m3">
+								<div class="col-6">
+									<h3>Bonnet 1</h3>
+								</div>
+								<div class="col-6">
+									<select id="SelectBonnet1" onchange="javascript:flipBonnet1();">
+										<option value="#0000FF" url="images/0.png" style="color: Blue;">Blue</option>
+										<option selected value="#000080" url="images/1.png" style="color: Navy;">Navy</option>
+										<option value="#800080" url="images/2.png" style="color: Purple;">Purple</option>
+										<option value="#006400" url="images/3.png" style="color: DarkGreen;">DarkGreen</option>
+										<option value="#FFA500" url="images/4.png" style="color: Orange;">Orange</option>
+										<option value="#FF0000" url="images/5.png" style="color: Red;">Red</option>
+										<option value="#A52A2A" url="images/6.png" style="color: Brown;">Brown</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row m3">
+								<div class="col-6">
+									<h3>Bonnet 2</h3>
+								</div>
+								<div class="col-6">
+									<select id="SelectBonnet2" onchange="javascript:flipBonnet2();">
+										<option selected value="#0000FF" url="images/10.png" style="color: Blue;">Blue</option>
+										<option value="#000080" url="images/11.png" style="color: Navy;">Navy</option>
+										<option value="#800080" url="images/12.png" style="color: Purple;">Purple</option>
+										<option value="#006400" url="images/13.png" style="color: DarkGreen;">DarkGreen</option>
+										<option value="#FFA500" url="images/14.png" style="color: Orange;">Orange</option>
+										<option value="#FF0000" url="images/15.png" style="color: Red;">Red</option>
+										<option value="#A52A2A" url="images/16.png" style="color: Brown;">Brown</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row m3">
+								<div class="col-6">
+									<h3>Yeux</h3>
+								</div>	
+								<div class="col-6">
+									<select style="font-family: 'Font Awesome 5 Free', 'Source Sans Pro';">
+										<option style="color:#000000;"> &#xf0c8; Black</option>
+										<option> <p style="color:#0000FF;"> &#xf0c8; </p> Black</option>
+										<option> Blue</option>
+										<option> Green</option>
+										<option> Brown</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row">
+							</div>
+
+						</div>
+
+
+					</section>
+
+						<div class="row">
+							<div style="text-align:center" class="col-12">
+								<input type="submit" value="Commander"/>
+							</div>
+						</div>
+			    </div>
+
+
+				<footer class="major container medium">
+					<h3>Viens me voir sur Instagram</h3>
+
+						<a href="https://www.instagram.com/leveritablepop/"> <img src="images/fondinstahaut.png" class="insta"/></a>
+
+					    <div id="demo" class="carousel slide" data-ride="carousel">
+						  <ul class="carousel-indicators">
+						    <li data-target="#demo" data-slide-to="0" class="active"></li>
+						    <li data-target="#demo" data-slide-to="1"></li>
+						    <li data-target="#demo" data-slide-to="2"></li>
+						    <li data-target="#demo" data-slide-to="3"></li>
+						  </ul>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <a href="https://www.instagram.com/leveritablepop/"> <img src="images/pop1.jpg"></a>
+						      <div class="carousel-caption">
+						        <h3 class="titrecarousel">En cuisine</h3>
+						      </div>   
+						    </div>
+						    <div class="carousel-item">
+						      <a href="https://www.instagram.com/leveritablepop/"> <img src="images/pop2.jpg"></a>
+						      <div class="carousel-caption">
+						        <h3 class="titrecarousel">Au restaurant</h3>
+						      </div>   
+						    </div>
+						    <div class="carousel-item">
+						      <a href="https://www.instagram.com/leveritablepop/"> <img src="images/pop3.jpg" ></a>
+						      <div class="carousel-caption">
+						        <h3 class="titrecarousel">En vacances</h3>
+						      </div>   
+						    </div>
+						    <div class="carousel-item">
+						      <a href="https://www.instagram.com/leveritablepop/"> <img src="images/pop4.jpg"></a>
+						      <div class="carousel-caption">
+						        <h3 class="titrecarousel">En soirées</h3>
+						      </div>   
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+						    <span class="carousel-control-prev-icon"></span>
+						  </a>
+						  <a class="carousel-control-next" href="#demo" data-slide="next">
+						    <span class="carousel-control-next-icon"></span>
+						  </a>
+						</div>
+						<a href="https://www.instagram.com/leveritablepop/"><img src="images/fondinstabas.png" class="insta"/></a>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+					  </div>
+
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container medium">
+
+					<p>Tu veux en savoir plus ? 
+					</br>Alors n'hésite pas et contacte nous !</p>
+
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input onClick="javascript:window.open('mailto:leveritablepop@gmail.com');event.preventDefault()" href="mailto:leveritablepop@gmail.com" type="submit" value="Nous contacter"/></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+
+					<ul class="icons">
+						<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/leveritablepop/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/erwanlagrange" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; AdoptaPop. 2019</li>
+						<li>Made with &hearts;  by Erwan Lagrange</li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/bootstrap.bundle.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
