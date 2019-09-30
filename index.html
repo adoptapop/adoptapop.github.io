@@ -37,9 +37,10 @@
 
 					<section class="feature left">
 						<a class="image">
-							<img src="images/0.png" class="imagepop" id="imageBonnet1"/>
-							<img src="images/0.png" class="imagepop" id="imageBonnet2"/>
-							<img src="images/bon_corps.png" class="imagepop" id="imageCorps"/>
+							<img src="images/pop/bonnet-1-bleu.png" class="imagepop" id="imageBonnet1"/>
+							<img src="images/pop/bonnet-2-bleuclair.png" class="imagepop" id="imageBonnet2"/>
+							<img src="images/pop/corps.png" class="imagepop" id="imageCorps"/>
+							<img src="images/pop/yeux-bleu.png" class="imagepop" id="imageYeux"/>
 						</a>
 						<div class="content">
 							<div class="row m3">
@@ -48,7 +49,7 @@
 								</div>
 								<div class="col-6">
 									<div >
-										<input type="text" name="name" placeholder="Nom">
+										<input type="text" placeholder="Nom" id="Nom">
 									</div>
 								</div>
 							</div>
@@ -59,13 +60,15 @@
 								</div>
 								<div class="col-6">
 									<select id="SelectBonnet1" onchange="javascript:flipBonnet1();">
-										<option value="#0000FF" url="images/0.png" style="color: Blue;">Blue</option>
-										<option selected value="#000080" url="images/1.png" style="color: Navy;">Navy</option>
-										<option value="#800080" url="images/2.png" style="color: Purple;">Purple</option>
-										<option value="#006400" url="images/3.png" style="color: DarkGreen;">DarkGreen</option>
-										<option value="#FFA500" url="images/4.png" style="color: Orange;">Orange</option>
-										<option value="#FF0000" url="images/5.png" style="color: Red;">Red</option>
-										<option value="#A52A2A" url="images/6.png" style="color: Brown;">Brown</option>
+										<option selected url="images/pop/bonnet-1-bleu.png">Bleu</option>
+										<option url="images/pop/bonnet-1-bleuclair.png">Bleu clair</option>
+										<option url="images/pop/bonnet-1-kaki.png">Vert kaki</option>
+										<option url="images/pop/bonnet-1-vert.png">Vert</option>
+										<option url="images/pop/bonnet-1-beige.png">Beige</option>
+										<option url="images/pop/bonnet-1-or.png">Or</option>
+										<option url="images/pop/bonnet-1-saumon.png">Saumon</option>
+										<option url="images/pop/bonnet-1-bordeaux.png">Bordeaux</option>
+										<option url="images/pop/bonnet-1-blanc.png">Blanc</option>
 									</select>
 								</div>
 							</div>
@@ -76,18 +79,34 @@
 								</div>
 								<div class="col-6">
 									<select id="SelectBonnet2" onchange="javascript:flipBonnet2();">
-										<option selected value="#0000FF" url="images/10.png" style="color: Blue;">Blue</option>
-										<option value="#000080" url="images/11.png" style="color: Navy;">Navy</option>
-										<option value="#800080" url="images/12.png" style="color: Purple;">Purple</option>
-										<option value="#006400" url="images/13.png" style="color: DarkGreen;">DarkGreen</option>
-										<option value="#FFA500" url="images/14.png" style="color: Orange;">Orange</option>
-										<option value="#FF0000" url="images/15.png" style="color: Red;">Red</option>
-										<option value="#A52A2A" url="images/16.png" style="color: Brown;">Brown</option>
+										<option url="images/pop/bonnet-2-bleu.png">Bleu</option>
+										<option selected url="images/pop/bonnet-2-bleuclair.png">Bleu clair</option>
+										<option url="images/pop/bonnet-2-kaki.png">Vert kaki</option>
+										<option url="images/pop/bonnet-2-vert.png">Vert</option>
+										<option url="images/pop/bonnet-2-beige.png">Beige</option>
+										<option url="images/pop/bonnet-2-or.png">Or</option>
+										<option url="images/pop/bonnet-2-saumon.png">Saumon</option>
+										<option url="images/pop/bonnet-2-bordeaux.png">Bordeaux</option>
+										<option url="images/pop/bonnet-2-blanc.png">Blanc</option>
 									</select>
 								</div>
 							</div>
 
 							<div class="row m3">
+								<div class="col-6">
+									<h3>Yeux</h3>
+								</div>
+								<div class="col-6">
+									<select id="SelectYeux" onchange="javascript:flipYeux();">
+										<option selected url="images/pop/yeux-bleu.png">Bleu</option>
+										<option url="images/pop/yeux-noir.png">Noir</option>
+										<option url="images/pop/yeux-marron.png">Marron</option>
+										<option url="images/pop/yeux-vert.png">Vert</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- <div class="row m3">
 								<div class="col-6">
 									<h3>Yeux</h3>
 								</div>	
@@ -100,7 +119,7 @@
 										<option> Brown</option>
 									</select>
 								</div>
-							</div>
+							</div> -->
 
 							<div class="row">
 							</div>
@@ -112,7 +131,10 @@
 
 						<div class="row">
 							<div style="text-align:center" class="col-12">
-								<input type="submit" value="Commander"/>
+								<form method="post" id="form-email" action="mailto:leveritablepop@gmail.com">
+
+								<input type="submit" value="Adopte moi" id="btn-email"/>
+								</form>
 							</div>
 						</div>
 			    </div>

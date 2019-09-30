@@ -2170,7 +2170,7 @@ input, select, textarea {
 	
 	.imagepop{
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 
 	.image {
@@ -2232,7 +2232,7 @@ input, select, textarea {
 				transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 				color: #fff;
 				font-size: 6em;
-				height: 1em;
+				height: auto;
 				left: 50%;
 				line-height: 1em;
 				margin: -0.5em 0 0 -0.5em;
@@ -2608,7 +2608,7 @@ input, select, textarea {
 
 	.feature {
 		position: relative;
-		height: 20em;
+		height: 25em;
 	}
 
 		.feature:after {
@@ -3006,7 +3006,7 @@ input, select, textarea {
 		/* Feature */
 
 			.feature {
-				height: 18em;
+				height: 23em;
 			}
 
 				.feature .content {
@@ -3155,8 +3155,8 @@ input, select, textarea {
 
 				.feature .image {
 					float: none;
-					height: 15em;
 					width: 100%;
+					height: 20em;
 				}
 
 				.feature .content {
