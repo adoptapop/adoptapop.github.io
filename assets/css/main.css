@@ -65,7 +65,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input,.custombtn, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -101,7 +101,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, select, textarea {
+	body, input, .custombtn, select, textarea {
 		color: #6e6e6e;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 16pt;
@@ -2078,6 +2078,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	.custombtn,
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2104,6 +2105,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		.custombtn:focus,
 		select:focus,
 		textarea:focus {
 			background: rgba(224, 224, 224, 0.15);
@@ -2113,6 +2115,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	.custombtn,
 	select {
 		line-height: 1em;
 	}
@@ -2512,6 +2515,7 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
+	.custombtn,
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2541,6 +2545,7 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
+		.custombtn:hover,
 		.button:hover {
 			background: #6e6570;
 		}
@@ -2548,6 +2553,7 @@ input, select, textarea {
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
+		.custombtn:active,
 		.button:active {
 			background: #474148;
 		}
@@ -2555,6 +2561,7 @@ input, select, textarea {
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
+		.custombtn.alt,
 		.button.alt {
 			background: none;
 			box-shadow: inset 0 0 0 1px rgba(224, 224, 224, 0.75);
@@ -2564,6 +2571,7 @@ input, select, textarea {
 			input[type="submit"].alt:hover,
 			input[type="reset"].alt:hover,
 			input[type="button"].alt:hover,
+			.custombtn.alt:hover,
 			.button.alt:hover {
 				background: rgba(224, 224, 224, 0.15);
 			}
@@ -2571,6 +2579,7 @@ input, select, textarea {
 			input[type="submit"].alt:active,
 			input[type="reset"].alt:active,
 			input[type="button"].alt:active,
+			.custombtn.alt:active,
 			.button.alt:active {
 				background: rgba(224, 224, 224, 0.35);
 			}
@@ -2578,6 +2587,7 @@ input, select, textarea {
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
+		.custombtn.fit,
 		.button.fit {
 			width: 100%;
 		}
@@ -2585,6 +2595,7 @@ input, select, textarea {
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
+		.custombtn.small,
 		.button.small {
 			font-size: 0.8em;
 		}
@@ -2927,7 +2938,7 @@ input, select, textarea {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input,.custombtn, select, textarea {
 				font-size: 14pt;
 			}
 
@@ -2968,7 +2979,7 @@ input, select, textarea {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input,.custombtn, select, textarea {
 				font-size: 13pt;
 			}
 
@@ -3065,7 +3076,7 @@ input, select, textarea {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input,.custombtn, select, textarea {
 				font-size: 12pt;
 			}
 
@@ -3242,6 +3253,7 @@ input, select, textarea {
 			input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
+			.custombtn,
 			.button {
 				display: block;
 				width: 100%;
@@ -3315,4 +3327,9 @@ input, select, textarea {
 	width: 100%;
 	height: auto;
 	vertical-align: baseline;
+}
+
+.button:hover{
+	text-decoration:none;
+	color: #FFFFFF;
 }

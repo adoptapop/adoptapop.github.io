@@ -77,7 +77,7 @@ function flipYeux() {
 	var formemail = document.querySelector('#form-email');
 	var btnemail = document.querySelector('#btn-email');
 
-	var original_mailto_url = formemail.action;
+	var original_mailto_url = btnemail.href;
 
 	// add the event listener to the link element
 	btnemail.addEventListener('click', function () {
@@ -90,5 +90,5 @@ function flipYeux() {
 								'Couleur Bonnet 2: '+ Bonnet2 +' %0A'+
 								'Couleur Yeux: '+ Yeux +' %0A'+
 								'---------------------------------------------------------------------------%0A%0A%0A%0A';
-	  formemail.action = mailto_url;
+	  btnemail.href = mailto_url;
 	});
